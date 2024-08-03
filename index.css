@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    overflow: hidden;
+  }
+
+  .trafficlight{
+    background-image: url(/1657803593_229886_gif-url.gif);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+  }
+  .light-img{
+    width: 500px;
+    margin: 20px auto;
+    margin-left: 78%;
+  }
+
+  .trafficlight .red{
+    position: absolute;
+   width: 55px;
+   height: 55px;
+   top: 54px;
+   right: 140px;
+   border-radius: 50%;
+   background-color: red;
+   border: 2px solid;
+   animation: redcolor 10s infinite;
+  }
+  @keyframes redcolor {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: red;
+    }
+    26% {
+      background-color: red;
+    }
+    27% {
+      background-color: red;
+    }
+    28% {
+      background-color: black;
+    }
+  
+    75% {
+      background-color: black;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+  
+  .trafficlight .yellow{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 141px;
+    right: 140px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 2px solid;
+    animation: yellowcolor 10s infinite;
+  }
+  @keyframes yellowcolor {
+    0% {
+      background-color: black;
+    }
+  
+    25% {
+      background-color: black;
+    }
+  
+    26% {
+      background-color: black;
+    }
+  
+    27% {
+      background-color: black;
+    }
+  
+    35% {
+      background-color: yellow;
+    }
+  
+    36% {
+      background-color: yellow;
+    }
+    37% {
+      background-color: yellow;
+    }
+  
+    38% {
+      background-color: yellow;
+    }
+  
+    50% {
+      background-color: black;
+    }
+  
+    100% {
+      background-color: black;
+    }
+  }
+  .trafficlight .green{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 227px;
+    right: 140px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid;
+    animation: greencolor 11s infinite;
+  }
+  @keyframes greencolor {
+    0% {
+      background-color: black;
+    }
+    26% {
+      background-color: black;
+    }
+  
+    27% {
+      background-color: black;
+    }
+  
+    30% {
+      background-color: black;
+    }
+  
+    35% {
+      background-color: black;
+    }
+  
+    73% {
+      background-color: green;
+    }
+  
+    75% {
+      background-color: green;
+    }
+  
+    80% {
+      background-color: green;
+    }
+  
+    85% {
+      background-color: black;
+    }
+  
+    100% {
+      background-color: black;
+    }
+  }
+  .car{
+   position: absolute;
+   top: 540px;
+   animation: car 10s;
+   
+  }
+  .car-img{
+    transform: rotatey(180deg);
+    position: absolute;
+    width: 500px;
+    height: 180px;
+  }
+  @keyframes car {
+    0% {
+      transform: translateX(-500px);
+    }
+    10% {
+      transform: translateX(0px);
+    }
+    60% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(1500px);
+    }
+  }
+
+  .wheel{
+    position: absolute;
+    animation: wheel 10s linear infinite;
+  }
+
+  .car .wheel1-img{
+    width: 70px;
+    top: 100px;
+    left: 85px;;
+  }
+  .car .wheel2-img{
+    width: 70px;
+    top: 100px;
+    left: 345px;
+  }
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(360deg);
+    }
+    11% {
+      transform: rotate(0deg);
+    }
+    60%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
